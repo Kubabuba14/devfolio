@@ -14,14 +14,14 @@ body {
 }
 
 .container {
-    display: block;
+    display: flex;
     height: 100vh;
 }
 
 .info-column {
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: auto;
 }
 
 .intro-box {
@@ -383,13 +383,42 @@ body {
     transition: .4s ease-in-out;
 }
 
+.portfolio-wrapper {
+  width:90%;
+  margin: 0;
+}
 
 
+.hello-banner {
+  position: relative;
+  background-image: url(https://unsplash.com/photos/wVKRhdkIbso/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTc5fHxibHVlJTIwY2l0eXxlbnwwfHx8fDE3MDAwODUyODV8MA&force=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 23vh;
+  padding: 30px;
+  margin: 10px 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
+.hello-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:  linear-gradient(rgba(17, 17, 24, 0.1), rgba(17, 17, 24, 0.9)); 
+  z-index: 1;
+}
 
+.hello-banner-txt {
+  position: relative;
+  font-size: 1.4em;
+  z-index: 2;
+  color: whitesmoke;
+}
 
-
-
-
-
-
+.hello-banner-txt h1 {
+  margin-left: 50px;
+}
