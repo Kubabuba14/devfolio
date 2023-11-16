@@ -496,11 +496,15 @@ body {
   margin: 0;
   width: 85px;
   cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .project a > h5:hover {
   color: var(--anim-blue);
   transition: .4s ease-in-out;
+  filter: brightness(150%);
 }
 
 .fa-chevron-right {
