@@ -488,6 +488,7 @@ body {
 .project:hover > h2{
   color: var(--anim-blue);
   transition: .4s ease-in-out;
+  filter: brightness(150%);
 }
 
 .project a h5 {
