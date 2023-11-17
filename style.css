@@ -948,3 +948,6 @@ body {
   background:  linear-gradient(rgba(17, 17, 24, 0.1), rgba(17, 17, 24, 0.9)); 
   z-index: 1;
 }
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px)

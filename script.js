@@ -1,3 +1,8 @@
+const projectsContainer = document.querySelector('.projects-container');
+
+
+
+
 const projects = [
     { id: 1, imageURL: 'https://unsplash.com/photos/-5rA4DRrEXU/download?force=true' },
     { id: 23, imageURL: 'https://unsplash.com/photos/ZO4rHqkCat4/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fHNwbGFzaHxlbnwwfHx8fDE3MDAxNTAzODl8MA&force=true' },
@@ -35,7 +40,6 @@ const projects = [
   }
   
   function addProjectsToContainer() {
-    const projectsContainer = document.querySelector('.projects-container');
   
     projects.forEach((project) => {
       const projectElement = createProjectElement(project);
