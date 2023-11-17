@@ -434,7 +434,7 @@ body {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-around;
     height: 67vh;
     margin: 20px 10px 10px 0;
     overflow-y: scroll;
@@ -460,7 +460,7 @@ body {
 
 .project {
   padding: 10px;
-  margin: 0 15px 20px 10px;
+  margin: 0 15px 20px 0px;
   width: 45%;
   height: 225px;
   border-radius: 5px;
@@ -949,5 +949,9 @@ body {
   z-index: 1;
 }
 
-/* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px)
+
+@media screen and (max-width: 1290px) {
+  .project {
+    width: 100%;
+  }
+}
